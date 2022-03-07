@@ -1,0 +1,91 @@
+/*header*/
+.main-header {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 50px;
+  border-bottom: 5px solid red;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 30px;
+  text-decoration: solid;
+  color: rgb(224, 115, 12);
+}
+.a-h1 :hover {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.buton {
+  border-radius: 15px;
+  background-color: orangered;
+}
+.buton :hover {
+  border-bottom: 30px;
+  box-shadow: 25px;
+}
+
+/*sections*/
+
+.section-123 {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  /*  background-color: azure;  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.boxes {
+  max-width: 260px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(243, 199, 103, 0.568);
+  opacity: 0.5;
+  display: flex;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section-123 :hover {
+  background-color: rgba(255, 246, 196, 0.466);
+
+  float: left;
+}
+.sec-inf {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.chkbx {
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 15px;
+}
+
+/*fotter*/
+.main-footer {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 4px dotted rgb(230, 138, 19);
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-p {
+  font-size: 25px;
+  color: rgb(209, 47, 47);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
