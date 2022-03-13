@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adding a product page</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/product.js"></script>
 </head>
 <body>
     <!-- header info -->
@@ -15,8 +16,8 @@
           <a href="index.html" class="a-h1"> <h1>Product Add</h1></a>
   
           <div>
-            <button type="save" id="savePr" class="buton">Save</button>
-            <button type="button" id="cancelPr" class="buton">Cancel</button>
+            <button type="save" id="savePr" class="button">Save</button>
+            <button type="button" id="cancelPr" class="button">Cancel</button>
           </div>
         </div>
       </header>
@@ -26,63 +27,85 @@
 
 
            
-           <section class="registracion">
-              <div class="product-list">
-                  <br>
-                <label > SKU : </label>         
-                <input type="text" id="sku" size="15"  class="input"/> <br> <br>  
-                <label> Name: </label>     
-                <input type="text" id="productName" size="15" class="input"/> <br> <br>  
-                <label> Price ($): </label>         
-                <input type="text" id="price" size="15" class="input"/> <br> <br>      
-               
-                <label>   
-                    Product type:  
-                    </label>   
-                 
-                  
-                 <select class="input">   
-                        
-                    <option value="Course" > Choose Product  </option>  
-                    <option value="Course"> DVD </option>  
-                    <option value="BCA"> Book </option>  
-                    <option value="BBA">Furniture</option>  
-                    
-                    </select> 
-                    
-                      
-                    <br>  
-                    <br>  
-                                        
+  <section class="registracion">
+      <div class="product-list">
+         <div>
+           <br>
+           <label for="SKU" > SKU : </label>         
+           <input type="value" id="sku" size="8" placeholder="Input product SKU" class="input" minlength="8" maxlength="8" required/> <br> <br>  
+         </div>  
+     
+         <div>
+        <label for="Name"> Name: </label>     
+        <input type="value" id="productName" size="10" minlength="3" maxlength="10" class="input" placeholder="Input product name..."  required/> <br> <br>  
+        </div>
 
-                    <!--DVD-->
-                    <label > Size (MB) : </label>
-                <input type="text" name="DVD-size" size="15" class="input">  </input>
-                <br>
-        
+        <div>
+        <label for="price"> Price ($): </label>         
+        <input type="price" id="price" size="15" class="input"  placeholder="Input product price"/> <br> <br>      
+        </div>
 
-                    <!--BOOK-->
-                    <br>   
-                    <label > Weight (KG) : </label>
-                    <input type="text" name="book-weight" size="15" class="input"/> 
-                    <br>
-                    <!--FURNITURE-->  
-                    <br>  
-                    <label > Height (CM) : </label>
-                    <input type="text" name="DVD-size" size="15" class="input" /> 
-                    <br>
-                    <br>
-                    <label >  Width (CM) : </label>
-                    <input type="text" name="DVD-size" size="15" class="input"/> 
-                    <br>
-                    <br>
-                    <label > Length(CM) : </label>
-                    <input type="text" name="DVD-size" size="15" class="input" />
-                    <br>
-            </div>
-       
-
+        <div>
+        <label>   
+            Product type:  
+            </label>   
+           <select id="list" class="input" onclick="getDVDList()" >   
+                
+            <option value="select" > select  </option>  
+            <option value="DVD"  > DVD </option>  
+            <option value="Book"  > Book </option>  
+            <option value="Furniture"  > Furniture</option>  
+            
+            </select> 
+            <br>
+            <br>
+         </div>
               
+           
+                                
+
+            <!--DVD-->
+
+            <div id="dvdFun" class="dvdFun" >
+              <br>
+               <label for="size" > Size (MB) : </label>
+                 <input type="number"  name="DVD-size" min="70" max="70" step="5" size="25" class="input" placeholder="Please, provide size" > 
+        
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: rgb(243, 139, 54);"> <br>we have only 70 MB DVD version </p>
+               <br>
+              </div>
+
+            <!--BOOK-->
+            <div id="bookFun" class="book-choose">
+            <br>   
+            <label for="weight"> Weight (KG) : </label>
+            <input type="number" name="book-weight" size="15" min="0" max="5" step="0.5" class="input" placeholder="Please, provide weight" required/> 
+            <br>
+            <br>
+          </div>
+
+
+            <!--FURNITURE-->  
+          
+          <div id="furnitureFun" class="funriture-choose">
+            <br>  
+            <label for="height" > Height (CM) : </label>
+            <input type="numer" name="Height" size="2" min="24" max="24" class="input" placeholder="Please, provide dimensions " required/> 
+            <br>
+            <br>
+            <label for="width" >  Width (CM) : </label>
+            <input type="number" name="width" size="15" class="input"  placeholder="Please, provide dimensions " required/> 
+            <br>
+            <br>
+            <label for="length" > Length(CM) : </label>
+            <input type="number" name="length" size="15" class="input"  placeholder="Please, provide dimensions " required/>
+            <br>
+            <br>
+          </div>
+
+
+     
+  </div>
 
            </section>
 
@@ -90,7 +113,7 @@
 
     <footer>
         <div class="main-footer">
-          <p class="footer-p">Scaniweb Test assigment // Bukhuti Vardandze</p>
+          <p class="footer-p">Scandiweb Test assigment // Bukhuti Vardandze</p>
         </div>
       </footer>
 </body>

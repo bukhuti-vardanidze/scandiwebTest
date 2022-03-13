@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Product list page</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/product.js"></script>
@@ -15,12 +15,12 @@
       <div class="main-header">
         <a href="product.html" class="a-h1"> <h1>Product list</h1></a>
 
-        <div>
-          <button type="button" id="btn"  class="buton">add</button>
-          <button type="button" id="btn" class="buton">MASS DELETE</button>
+      <div id="addDel" class="addDel">   
+        <a href="product.html">    <button type="button" id="btn" class="button" >add</button>   </a>
+          <button type="button" id="btnB" class="button" >MASS DELETE</button>
           
 
-        </div>
+         </div> 
       </div>
     </header>
 
@@ -30,7 +30,9 @@
         <div class="boxes">
 
           <div class="chkbx">
-            <input type="checkbox" id="check"  onclick="enable()"/>
+            <form action="#">
+            <input type="checkbox" id="checkA" class="checkbox" onclick="enable()"/>
+          </form>
           </div>
 
        <div class="sec-inf">
@@ -41,9 +43,11 @@
           </div>
         </div>
 
-          <div class="boxes">
+         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="">
+            <input type="checkbox" id="checkB"  class="checkbox" onclick="enableB()" />
+            </form>
           </div>
 
           <div class="sec-inf">
@@ -56,7 +60,9 @@
 
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkC" onclick="enableC()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
@@ -69,7 +75,9 @@
 
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkD" onclick="enableD()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
@@ -79,16 +87,21 @@
             <p>Size : 700 MB</p>
           </div>
         </div>
+     
+      
       </div>
     </section>
     
 
     <!--section 2 -book-->  
+  
     <section>
       <div class="section-123">
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkSec1" onclick="enableSecA()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
@@ -101,7 +114,9 @@
 
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkSec2" onclick="enableSecB()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
@@ -114,7 +129,9 @@
 
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkSec3" onclick="enableSecC()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
@@ -127,7 +144,9 @@
 
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkSec4" onclick="enableSecD()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
@@ -139,17 +158,21 @@
         </div>
       </div>
     </section>
+   
+
 
     <!-- section -3 chair -->      
-    <section>
+  <section>
       <div class="section-123">
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkthr1" onclick="enablethrA()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
-            <p>CH20021</p>
+            <p>CH200214</p>
             <p>Chair</p>
             <p>40.00$</p>
             <p>Dimension: 24x45x15</p>
@@ -158,11 +181,13 @@
 
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkthr2" onclick="enablethrB()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
-            <p>CH20022</p>
+            <p>CH200223</p>
             <p>Chair</p>
             <p>40.00$</p>
             <p>Dimension: 24x45x15</p>
@@ -171,11 +196,13 @@
 
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkthr3" onclick="enablethrC()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
-            <p>CH20023</p>
+            <p>CH200232</p>
             <p>Chair</p>
             <p>40.00$</p>
             <p>Dimension: 24x45x15</p>
@@ -184,11 +211,13 @@
 
         <div class="boxes">
           <div class="chkbx">
-            <input type="checkbox" id="checkbox" />
+            <form action="#">
+            <input type="checkbox" class="checkbox" id="checkthr4" onclick="enablethrD()"/>
+          </form>
           </div>
 
           <div class="sec-inf">
-            <p>CH20024</p>
+            <p>CH200241</p>
             <p>Chair</p>
             <p>40.00$</p>
             <p>Dimension: 24x45x15</p>
@@ -196,12 +225,12 @@
         </div>
       </div>
     </section>
-    
-    <!--fotterr-->
+    -->
+                                <!--footer-->
 
     <footer>
       <div class="main-footer">
-        <p class="footer-p">Scaniweb Test assigment // Bukhuti Vardandze</p>
+        <p class="footer-p">Scandiweb Test assigment // Bukhuti Vardandze</p>
       </div>
     </footer>
   </body>

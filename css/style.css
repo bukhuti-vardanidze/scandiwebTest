@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-around;
   padding: 30px 50px;
-  border-bottom: 5px solid red;
+  border-bottom: 3px solid rgb(99, 2, 2);
   margin: 0 auto;
 }
 h1 {
@@ -13,22 +13,26 @@ h1 {
   text-decoration: solid;
   color: rgb(224, 115, 12);
 }
-.a-h1 :hover {
+/*.a-h1 :hover {
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
+}*/
+
+.button{
+  height: 30px;
+ border-radius: 12px;
+  background-color: rgb(209, 170, 111);
+  border:rgb(214, 98, 20);
+  border-style:inset;
+  cursor: pointer;
 }
 
-/*.buton {
-  border-radius: 15px;
-  background-color: orangered;
-  border:rgb(230, 207, 9);
-  border-style:ridge;
+
+.addDel{
+  display: none;
 }
-.buton :hover {
-  border-bottom: 30px;
-  box-shadow: 25px;
-}
-*/
+
+
 /*sections*/
 
 .section-123 {
@@ -47,18 +51,14 @@ h1 {
   height: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: rgba(241, 183, 56, 0.521);
+  border:3px double black;
 /*opacity: 0.5; */
   display: flex;
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.section-123 :hover {
-  background-color: rgba(255, 246, 196, 0.466);
 
-  float: left;
-}
 .sec-inf {
   width: 230px;
   display: flex;
@@ -66,6 +66,11 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
 }
+.checkbox{
+ cursor: pointer;
+}
+
+
 /*.chkbx {
   margin-top: 20px;
   margin-left: 10px;
@@ -80,7 +85,8 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: 4px dotted rgb(230, 138, 19);
+    border-top: 3px solid rgb(99, 2, 2);
+
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -107,7 +113,7 @@ h1 {
 
 .registracion{
      max-width: 1200px;
-     height: 350px;
+     height: auto;
      display: flex;
      margin: 0 auto;
      flex-direction: column;
@@ -120,18 +126,25 @@ h1 {
      font-style: italic;  
      font-weight: bolder;
 }
-/*.input{
+
+.input{
+  background-color: rgb(255, 255, 255);
+  width: 165px;
+  border-color: rgb(231, 92, 11);
+  height: 25px;
   border-radius: 15px;
-  background: rgb(237,166,42);
-  background: linear-gradient(165deg, rgba(237,166,42,1) 27%, rgba(206,233,10,0.342472022988883) 77%); 
-  border-style: none;
 
 }
 
 
+/*list*/
+.dvdFun{
+  display: none;
+}
+.book-choose{
+  display: none;
+}
 
-
-.product-list{
-  display: block;
- 
+.funriture-choose{
+  display: none;
 }
