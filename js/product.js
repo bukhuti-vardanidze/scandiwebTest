@@ -149,7 +149,7 @@ function enablethrD(){
 
    /*prduct list */
 
-   /*list */
+  //list
 
   function getDVDList(){
    var x = document.getElementById('list').value;
@@ -177,5 +177,20 @@ function enablethrD(){
 
   
   }
- 
+
+
+  
+
+
+   function save(){
+  let saveBt = document.getElementById('savePr')
+  let sectionDv = document.getElementById('section')
+    if(saveBt.checked == true){
+        sectionDv.style.display = 'none'
+    }   else {
+
+    }
+
+
+}
  
